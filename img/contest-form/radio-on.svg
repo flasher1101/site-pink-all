@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 14.938 14.94">
+  <defs>
+    <style><![CDATA[
+      #circle {
+      fill: #d22856;
+      }
+      ]]>
+    </style>
+  </defs>
+  <circle id="circle" cx="7.469" cy="7.47" r="7.469"/>
+</svg>

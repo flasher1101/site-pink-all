@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/index.css">
+	<script>
+		document.createElement( "picture" );
+	</script>
+	<script src="picturefill.min.js" async></script>
+</head>
+<body class="form-page photo-page">
+	<div class="container">
+		<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none">
+			<symbol id="twitter" viewBox="0 0 17.5 14.7">
+				<path d="M11.3,0.2C13-0.3,14.4,0.4,15,1.3c0.7-0.2,1.4-0.5,2.1-0.7c0,0.8-0.5,1.5-0.9,1.7c0.7,0.2,1.3-0.5,1.3-0.5
+				c-0.2,1-1,1.7-1.6,2c-0.2,6.6-3.3,11-10.4,10.8c-0.5,0,0.1,0-0.5,0c-0.4,0-4.3-0.4-5-1.8c2.3,0.2,4-0.4,4.8-1.1
+				c-1-0.3-2.8-0.5-3.1-2.9C2.1,8.9,2.3,9,3,8.9C1.8,8.1,0.4,7.4,0.5,5.2c0.3,0.3,1.1,0.5,1.4,0.5c-0.7-0.2-2-3.3-0.9-4.8
+				c1.9,1.8,3.8,3.5,7.4,3.7C8.5,2.3,9.5,0.8,11.3,0.2z"/>
+			</symbol>
+			<symbol id="facebook" viewBox="0 0 8.7 18.9">
+				<path d="M6.3,3.4c0.8,0,1.6,0,2.4,0c0-1.1,0-2.2,0-3.4c-1,0-1.9,0-2.9,0C2.7,0.2,1.5,2.4,1.9,6.1H0v3.5h2
+				c0,3.1,0,6.2,0,9.3c1.3,0,2.6,0,3.8,0c0-3.1,0-6.2,0-9.3h2.9V6.1H5.8C5.8,5.1,5.8,3.7,6.3,3.4z"/>
+			</symbol>
+			<symbol id="youtube" viewBox="0 0 14.6 14">
+				<path d="M1.8,13.8c-1,0.5-1.8,0-1.8-1.1V1.3c0-1.1,0.8-1.6,1.8-1.1l12.1,5.9c1,0.5,1,1.3,0,1.7L1.8,13.8z"/>
+			</symbol>
+			<symbol id="HTMLacademy" viewBox="0 0 154.4 195.3">
+				<path d="M78,.6h-.8L.5,8.5V149.1l76.7,45.6,76.7-45.6V8.5Zm65.9,142.8L77.2,183.1,10.5,143.4V85.8l66.4,39.5v7.2L31.5,105.4v6.9l45.7,27.5v7.3L31.5,119.9v7l45.7,27.5,46.1-27.6v-7h0V97.1l20.6-12.3Zm-.1-66.1L125.6,88.1l-8.5,5L77,69.2v6.9l34.3,20.4-.3.2-.7.4-4.9,2.9L77,83.2v6.9l22.4,13.3L94,106.9h-.1L77,97.1V104L88,110.5l-11.3,6.8-66-39.2L76.8,38.3h0Zm.1-6.9L76.8,30.8h0L10.5,70.3V17.6l66.7-7,66.7,7Z" style="stroke:#231f20;stroke-miterlimit:10"/>
+			</symbol>
+			<symbol id="contrast" viewBox="-35.4 -8 31.9 31.9">
+				<path d="M-19.5-4c6.6 0 12 5.4 12 12s-5.4 12-12 12-12-5.4-12-12 5.4-12 12-12m0-4c-8.8 0-16 7.1-16 16 0 8.8 7.1 16 16 16 8.8 0 16-7.1 16-16 0-8.8-7.1-16-16-16z"/>
+				<path d="M-19.5 16.3c4.7 0 8.5-3.8 8.5-8.5s-3.8-8.5-8.5-8.5"/>
+			</symbol><symbol id="crop" viewBox="0 0 48 48">
+				<path d="M34 30h4V14c0-2.2-1.8-4-4-4H18v4h16v16zm-20 4V2h-4v8H2v4h8v20c0 2.2 1.8 4 4 4h20v8h4v-8h8v-4H14z"/>
+			</symbol><symbol id="fill" viewBox="0 0 48 48">
+				<path d="M33.1 17.9L15.2 0l-2.8 2.8 4.8 4.8L6.9 17.9c-1.2 1.2-1.2 3.1 0 4.2l11 11c.6.6 1.4.9 2.1.9s1.5-.3 2.1-.9l11-11c1.2-1.1 1.2-3.1 0-4.2zM10.4 20l9.6-9.6 9.6 9.6H10.4zM38 23s-4 4.3-4 7c0 2.2 1.8 4 4 4s4-1.8 4-4c0-2.7-4-7-4-7zM0 40h48v3H0z"/>
+			</symbol>
+		</svg>
+		<header class="page-header">
+			<div class="main-nav__wrapper">
+				<nav class="main-nav main-nav--closed main-nav--no-js">
+					<div class="main-nav__1row">
+						<picture>
+							<source media="(min-width: 1220px)" srcset="img/header/pink-logo-desctop.svg"/>
+							<source media="(min-width: 680px)" srcset="img/header/pink-logo-tablet.svg"/>
+							<source srcset="img/header/pink-logo-mobile.svg"/>
+							<img class="site-logo page-header__logo" height="22">
+						</picture>
+						<button class="main-nav__toggle" aria-label="открыть меню" type="button"></button>
+					</div>
+					<ul class="main-nav__list">
+						<li class="main-nav__list-item"><a href="index.html">Главная</a></li>
+						<li class="main-nav__list-item main-nav__list-item--active"><a>Фотографии</a></li>
+						<li class="main-nav__list-item"><a href="form.html">Конкурс</a></li>
+						<li class="main-nav__list-item"><a href="#">HTML Academy</a></li>
+					</ul>
+				</nav>
+			</div>
+			<h1 class="main-header">Фотографии<br>пользователей</h1>
+		</header>
+		<main>
+			<section class="photo">
+				<h2 class="contest__header">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
+				<section class="photo__panorama panorama">
+					<h3 class="visually-hidden">Панорама дня</h3>
+					<div class="panorama__img-wrapper">
+						<picture>
+							<source media="(min-width: 1220px)" srcset="img/photo/desctop/panorama-desktop.jpg"/>
+							<source media="(min-width: 680px)" srcset="img/photo/tablet/panorama-tablet.jpg"/>
+							<source srcset="img/photo/mobile/panorama-mobile.jpg"/>
+							<img alt="Мост между горами" class="panorama__img">
+						</picture>
+					</div>
+					<div class="photo__comment panorama__comment">
+						<p class="photo__author-info panorama__author-info">
+							<b class="photo__author-name">Анна</b>
+							<time class="photo__post-time">(5 минут назад)</time>
+						</p>
+						<p class="photo__comment-text panorama__comment-text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+						<div class="photo__likes panorama__likes">
+							<div class="photo__likes-info panorama__likes-info">
+								Нравится: <span class="photo__likes-value">215</span>
+							</div>
+							<button type="button" class="photo__like-button" aria-label="кнопка нравится"></button>
+						</div>
+					</div>
+				</section>
+				<div class="photo__post-wrapper">
+					<section class="photo__post">
+						<h3 class="visually-hidden">Пост</h3>
+						<div class="photo__img-wrapper">
+							<picture>
+								<source media="(min-width: 1220px)" srcset="img/photo/desctop/photo-1-desktop.jpg"/>
+								<source media="(min-width: 680px)" srcset="img/photo/tablet/photo-1-tablet.jpg"/>
+								<source srcset="img/photo/mobile/photo-1-mobile.jpg"/>
+								<img alt="Машина на фоне стены" class="photo__img">
+							</picture>
+						</div>
+						<div class="photo__comment">
+							<p class="photo__author-info">
+								<b class="photo__author-name">Левон</b>
+								<time class="photo__post-time">(5 часов назад)</time>
+							</p>
+							<p class="photo__comment-text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+							<div class="photo__likes">
+								<div class="photo__likes-info">
+									Нравится: <span class="photo__likes-value">356</span>
+								</div>
+								<button type="button" class="photo__like-button" aria-label="кнопка нравится"></button>
+							</div>
+						</div>
+					</section>
+					<section class="photo__post">
+						<h3 class="visually-hidden">Пост</h3>
+						<div class="photo__img-wrapper">
+							<picture>
+								<source media="(min-width: 1220px)" srcset="img/photo/desctop/photo-2-desktop.jpg"/>
+								<source media="(min-width: 680px)" srcset="img/photo/tablet/photo-2-tablet.jpg"/>
+								<source srcset="img/photo/mobile/photo-2-mobile.jpg"/>
+								<img alt="барабаны" class="photo__img">
+							</picture>
+						</div>
+						<div class="photo__comment">
+							<p class="photo__author-info">
+								<b class="photo__author-name">Антон</b>
+								<time class="photo__post-time">(12 часов назад)</time>
+							</p>
+							<p class="photo__comment-text">Соседи будут рады!</p>
+							<div class="photo__likes">
+								<div class="photo__likes-info">
+									Нравится: <span class="photo__likes-value">666</span>
+								</div>
+								<button type="button" class="photo__like-button"></button>
+							</div>
+						</div>
+					</section>
+					<section class="photo__post">
+						<h3 class="visually-hidden">Пост</h3>
+						<div class="photo__img-wrapper">
+							<picture>
+								<source media="(min-width: 1220px)" srcset="img/photo/desctop/photo-3-desktop.jpg"/>
+								<source media="(min-width: 680px)" srcset="img/photo/tablet/photo-3-tablet.jpg"/>
+								<source srcset="img/photo/mobile/photo-3-mobile.jpg"/>
+								<img alt="вид голубого неба из большого окна" class="photo__img">
+							</picture>
+						</div>
+						<div class="photo__comment">
+							<p class="photo__author-info">
+								<b class="photo__author-name">Борис</b>
+								<time class="photo__post-time">(20 часов назад)</time>
+							</p>
+							<p class="photo__comment-text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+							<div class="photo__likes">
+								<div class="photo__likes-info">
+									Нравится: <span class="photo__likes-value">215</span>
+								</div>
+								<button type="button" class="photo__like-button"></button>
+							</div>
+						</div>
+					</section>
+					<section class="photo__post">
+						<h3 class="visually-hidden">Пост</h3>
+						<div class="photo__img-wrapper">
+							<picture>
+								<source media="(min-width: 1220px)" srcset="img/photo/desctop/photo-4-desktop.jpg"/>
+								<source media="(min-width: 680px)" srcset="img/photo/tablet/photo-4-tablet.jpg"/>
+								<source srcset="img/photo/mobile/photo-4-mobile.jpg"/>
+								<img  alt="кубанская бахча" class="photo__img">
+							</picture>
+						</div>
+						<div class="photo__comment">
+							<p class="photo__author-info">
+								<b class="photo__author-name">Сергей</b>
+								<time class="photo__post-time">(25 часов назад)</time>
+							</p>
+							<p class="photo__comment-text">Самая кубанская в мире!</p>
+							<div class="photo__likes">
+								<div class="photo__likes-info">
+									Нравится: <span class="photo__likes-value">4</span>
+								</div>
+								<button type="button" class="photo__like-button"></button>
+							</div>
+						</div>
+					</section>
+					<section class="photo__post">
+						<h3 class="visually-hidden">Пост</h3>
+						<div class="photo__img-wrapper">
+							<picture>
+								<source media="(min-width: 1220px)" srcset="img/photo/desctop/photo-5-desktop.jpg"/>
+								<source media="(min-width: 680px)" srcset="img/photo/tablet/photo-5-tablet.jpg"/>
+								<source srcset="img/photo/mobile/photo-5-mobile.jpg"/>
+								<img alt="вид с высокой горы" class="photo__img">
+							</picture>
+						</div>
+						<div class="photo__comment">
+							<p class="photo__author-info">
+								<b class="photo__author-name">Максим</b>
+								<time class="photo__post-time">(40 часов назад)</time>
+							</p>
+							<p class="photo__comment-text">Где снег-то?</p>
+							<div class="photo__likes">
+								<div class="photo__likes-info">
+									Нравится: <span class="photo__likes-value">150</span>
+								</div>
+								<button type="button" class="photo__like-button"></button>
+							</div>
+						</div>
+					</section>
+					<section class="photo__post">
+						<h3 class="visually-hidden">Пост</h3>
+						<div class="photo__img-wrapper">
+							<picture>
+								<source media="(min-width: 1220px)" srcset="img/photo/desctop/photo-6-desktop.jpg"/>
+								<source media="(min-width: 680px)" srcset="img/photo/tablet/photo-6-tablet.jpg"/>
+								<source srcset="img/photo/mobile/photo-6-mobile.jpg"/>
+								<img alt="вид восхода солнца с илюминатора самолета" class="photo__img">
+							</picture>
+						</div>
+						<div class="photo__comment">
+							<p class="photo__author-info">
+								<b class="photo__author-name">Надежда</b>
+								<time class="photo__post-time">(45 часов назад)</time>
+							</p>
+							<p class="photo__comment-text">Всем GM и взаимные лайки!</p>
+							<div class="photo__likes">
+								<div class="photo__likes-info">
+									Нравится: <span class="photo__likes-value">2560</span>
+								</div>
+								<button type="button" class="photo__like-button"></button>
+							</div>
+						</div>
+					</section>
+				</div>
+				<b class="photo__slogan contest__header">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</b>
+				<section class="photo__editor editor">
+					<h3 class="visually-hidden">Запостите свое фото</h3>
+					<div class="editor__img-wrapper">
+						<picture>
+							<source media="(min-width: 1220px)" srcset="img/photo/desctop/photo-7-desktop.jpg"/>
+							<source media="(min-width: 680px)" srcset="img/photo/tablet/photo-7-tablet.jpg"/>
+							<source srcset="img/photo/mobile/photo-7-mobile.jpg"/>
+							<img alt="дорога в лесу зимой" class="editor__img">
+						</picture>
+					</div>
+					<div class="editor__bottom">
+						<section class="editor__instruments">
+							<h4 class="visually-hidden">Выберите инструмент и настройте по своему усмотрению</h4>
+							<div class="editor__instruments-wrapper">
+								<button class="editor__instrument editor__crop editor__instrument--active" type="button" aria-label="crop">
+									<svg width="44" height="44" aria-hidden="true">
+										<use xlink:href="#crop"/>
+									</svg>
+								</button>
+								<button class="editor__instrument editor__fill editor__instrument--active" type="button" aria-label="fill">
+									<svg width="48" height="43" aria-hidden="true">
+										<use xlink:href="#fill"/>
+									</svg>
+								</button>
+								<button class="editor__instrument editor__contrast" type="button" aria-label="contrast">
+									<svg width="32" height="32" aria-hidden="true">
+										<use xlink:href="#contrast"/>
+									</svg>
+								</button>
+								<div class="editor__range-wrapper">
+									<svg width="44" height="44" aria-hidden="true" class="editor__icon editor__icon--crop">
+										<use xlink:href="#crop"/>
+									</svg>
+									<div class="editor__range editor__range--crop">
+										<div class="editor__handle"  aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" role="slider" aria-label="crop" tabindex="0"></div>
+									</div>
+								</div>
+								<div class="editor__range-wrapper">
+									<svg width="48" height="43" aria-hidden="true" class="editor__icon editor__icon--fill">
+										<use xlink:href="#fill"/>
+									</svg>
+									<div class="editor__range editor__range--fill">
+										<div class="editor__handle"  aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" role="slider" aria-label="fill" tabindex="0"></div>
+									</div>
+								</div>
+								<div class="editor__range-wrapper">
+									<svg width="32" height="32" aria-hidden="true" class="editor__icon editor__icon--contrast">
+										<use xlink:href="#contrast"/>
+									</svg>
+									<div class="editor__range editor__range--contrast">
+										<div class="editor__handle"  aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" role="slider" aria-label="contrast" tabindex="0"></div>
+									</div>
+								</div>
+							</div>
+							<div class="editor__range editor__range--general">
+								<div class="editor__handle"  aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" role="slider" aria-label="crop" tabindex="0" style="transform: translateX(196px)"></div>
+							</div>
+						</section>
+						<div class="editor__buttons">
+							<a href="#" class="editor__btn editor__submit">Запостить</a>
+							<a href="#" class="editor__btn editor__cancle">Отмена</a>
+						</div>
+					</div>
+				</section>
+			</section>
+		</main>
+		<footer class="page-footer">
+			<div class="footer__bottom">
+				<div class="footer__logo">
+					<svg style="cursor: pointer;" id="starHTML" width="147" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 146.3 40.4">
+						<style>
+							<![CDATA[
+							#starHTML:hover .star path, #starHTML:hover .star {
+								fill: #d22856 !important;
+							}
+
+							#starHTML:hover .glasses path {
+								fill: #000000 !important;
+							}
+
+							#starHTML:hover .pink path {
+								fill: green !important;
+							}
+							]]>
+						</style>
+						<g class="pink">
+							<path style="fill:#283645;" d="M71.9,18.7c0-0.7,0.6-1.3,1.3-1.3h7.2c5.1,0,8.4,2.7,8.4,7.1v0.1c0,4.9-4.1,7.4-8.9,7.4h-5.5v6.8
+							c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L71.9,18.7L71.9,18.7z M80,29.6c3.7,0,6.2-2,6.2-5v-0.1c0-3.2-2.4-4.9-6.1-4.9h-5.7
+							v9.9L80,29.6L80,29.6z"/>
+							<path style="fill:#283645;" d="M93.6,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v20.3c0,0.7-0.6,1.3-1.3,1.3
+							c-0.7,0-1.3-0.6-1.3-1.3V18.5z"/>
+							<path style="fill:#283645;" d="M102.7,18.5c0-0.7,0.6-1.3,1.3-1.3h0.4c0.6,0,0.9,0.3,1.3,0.7l13.7,17.4v-17c0-0.7,0.5-1.3,1.3-1.3
+							c0.7,0,1.2,0.6,1.2,1.3v20.3c0,0.7-0.5,1.2-1.2,1.2h-0.1c-0.5,0-0.9-0.3-1.3-0.8l-14-17.9v17.4c0,0.7-0.5,1.3-1.3,1.3
+							c-0.7,0-1.2-0.6-1.2-1.3L102.7,18.5L102.7,18.5z"/>
+							<path style="fill:#283645;" d="M128.2,18.5c0-0.7,0.6-1.3,1.3-1.3c0.7,0,1.3,0.6,1.3,1.3v12.3l12.8-13.2c0.3-0.3,0.6-0.5,1-0.5
+							c0.7,0,1.2,0.6,1.2,1.3c0,0.4-0.2,0.6-0.4,0.9l-8,7.9l8.6,10.6c0.2,0.3,0.4,0.5,0.4,0.9c0,0.7-0.6,1.3-1.3,1.3
+							c-0.5,0-0.8-0.3-1-0.6L135.6,29l-4.9,4.9v4.9c0,0.7-0.6,1.3-1.3,1.3c-0.7,0-1.3-0.6-1.3-1.3L128.2,18.5L128.2,18.5z"/>
+						</g>
+						<path style="fill:#D22856;" class="star" d="M98.5,9.9c-2,0-3.6-1.6-3.6-3.6c0,2-1.6,3.6-3.6,3.6c2,0,3.6,1.6,3.6,3.6
+						C94.9,11.5,96.5,9.9,98.5,9.9z"/>
+						<g class="glasses">
+							<path style="fill:#D22856;" d="M43.1,19.3c0.2,0,0.5,0,0.7,0c-0.4-0.7-1.2-1.2-2.1-1.2c-0.9,0-1.6-0.6-1.9-1.4
+							c-0.7,0.2-1.4,0.5-2.1,0.8c0.1,0,0.1,0,0.2,0c1.1,0,2,0.9,2,2c0,0.1,0,0.2,0,0.3C40.9,19.5,42,19.3,43.1,19.3z"/>
+							<path style="fill:#D22856;" d="M60.5,28c0,0-5.2-21.4-5.2-21.4C54.9,4.3,52.7,0,46.7,0c-0.8,0-1.5,0.7-1.5,1.5S45.9,3,46.7,3
+							c4.9,0,5.6,3.7,5.6,4.1l4.8,19.7H55c-0.4-3.6-2.5-6.6-5.3-8.5c-0.9,0.4-1.5,1.3-1.5,2.3c0,0.1,0,0.2,0,0.3c2,1.4,3.4,3.5,3.8,6
+							c0.1,0.5,0.1,1,0.1,1.5c0,0.5-0.1,1-0.1,1.5c-0.7,4.3-4.4,7.5-8.9,7.5c-4.5,0-8.2-3.3-8.9-7.5c-0.1-0.5-0.1-1-0.1-1.5
+							c0-0.5,0.1-1,0.1-1.5c0.1-0.9,0.4-1.7,0.8-2.5c-1-0.1-1.9-0.9-1.9-2c0-0.2-0.1-0.4-0.2-0.5c-0.9,1.5-1.6,3.1-1.8,5h-1.8
+							c-0.7-5.9-5.8-10.5-11.9-10.5S6.2,20.9,5.5,26.8H3.4L8.2,7.1C8.3,6.7,9,3,13.8,3c0.8,0,1.5-0.7,1.5-1.5S14.7,0,13.8,0
+							c-6,0-8.2,4.3-8.6,6.7c0,0-5.2,21.4-5.2,21.4c-0.3,1.1,0.5,1.8,1.4,1.8c0,0,0,0,0,0h4c0.1,0.6,0.2,1.2,0.4,1.8
+							C5.9,31.6,6,31.5,6,31.3c0-1.1,0.9-2,2-2c0.2,0,0.3,0,0.5,0.1c0-0.3-0.1-0.7-0.1-1c0-0.5,0.1-1,0.1-1.5c0.7-4.3,4.4-7.5,8.9-7.5
+							s8.2,3.3,8.9,7.5c0.1,0.5,0.1,1,0.1,1.5c0,0.5-0.1,1-0.1,1.5c-0.7,4.3-4.4,7.5-8.9,7.5c-2,0-3.9-0.7-5.4-1.8
+							c-0.4,0.3-0.8,0.5-1.3,0.5c-0.4,0-0.7,0.3-0.7,0.7c0,0.3-0.1,0.6-0.2,0.8c2.1,1.7,4.7,2.7,7.6,2.7c6.1,0,11.2-4.6,11.9-10.5h1.8
+							c0.7,5.9,5.8,10.5,11.9,10.5S54.3,35.8,55,29.8h4c0,0,0,0,0,0C59.9,29.8,60.7,29.1,60.5,28z"/>
+						</g>
+						<g class="star">
+							<g>
+								<path style="fill:#283645;" d="M50.7,16.1c-2.5,0-4.5-2-4.5-4.5c0,2.5-2,4.5-4.5,4.5c2.5,0,4.5,2,4.5,4.5
+								C46.2,18.1,48.2,16.1,50.7,16.1z"/>
+							</g>
+						</g>
+						<g class="star">
+							<g>
+								<path style="fill:#283645;" d="M37.9,19.6c-1.5,0-2.7-1.2-2.7-2.7c0,1.5-1.2,2.7-2.7,2.7c1.5,0,2.7,1.2,2.7,2.7
+								C35.2,20.9,36.4,19.6,37.9,19.6z"/>
+							</g>
+						</g>
+						<g class="star">
+							<g>
+								<path style="fill:#283645;" d="M10.7,34.1c-1.5,0-2.7-1.2-2.7-2.8c0,1.5-1.2,2.8-2.7,2.8c1.5,0,2.7,1.2,2.7,2.7
+								C8,35.3,9.2,34.1,10.7,34.1z"/>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<ul class="social-list">
+					<li class="social-list__item"><a href="#" class="social-list__link social-list__link--twitter" aria-lable="twitter">
+						<svg width="18" height="14" class="social-list__img">
+							<use xlink:href="#twitter"/>
+						</svg>
+					</a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link social-list__link--facebook" aria-label="facebook">
+						<svg width="9" height="18" class="social-list__img">
+							<use xlink:href="#facebook"/>
+						</svg>
+					</a></li>
+					<li class="social-list__item"><a href="#" class="social-list__link social-list__link--youtube" aria-lablel="youtube">
+						<svg width="15" height="13" class="social-list__img social-list__img--youtube">
+							<use xlink:href="#youtube"/>
+						</svg>
+					</a></li>
+				</ul>
+				<div class="copyright"><span>Разработано:</span> <a href="#" class="copyright__link" aria-label="HTML Academy">
+					<svg width="27" height="34" class="copyright__img">
+						<use xlink:href="#HTMLacademy"/>
+					</svg>
+				</a>
+			</div>
+		</footer>
+	</div>
+	<script>
+		var navMain = document.querySelector('.main-nav');
+		var navToggle = document.querySelector('.main-nav__toggle');
+
+		navMain.classList.remove('main-nav--no-js');
+
+		navToggle.addEventListener('click', function() {
+			if (navMain.classList.contains('main-nav--opened')) {
+				navMain.classList.remove('main-nav--opened');
+				navMain.classList.add('main-nav--closed');
+			} else {
+				navMain.classList.remove('main-nav--closed');
+				navMain.classList.add('main-nav--opened');
+			}
+		});
+	</script>
+</body>
+</html>
